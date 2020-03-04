@@ -1,21 +1,28 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
+
 const AdditionalFeatures = props => {
+  // const [state, dispatch] = useReducer(carReducer, initialState)
+// console.log('state inside additionalFeatures not to be confused with additionalfeature', state)
+console.log('props inside additionalFeatures not to be confused with additionalfeature', props)
+
   return (
     <div className="content">
       <h4>Additional Features</h4>
-      {props.additionalFeatures.length ? (
+      {/* {props.additionalFeatures.length ? (
         <ol type="1">
           {props.additionalFeatures.map(item => (
-            <AdditionalFeature key={item.id} feature={item} />
+            <AdditionalFeature key={item.id} item={item} />
           ))}
         </ol>
       ) : (
         <p>Nice looking car!</p>
-      )}
+      )} */}
     </div>
   );
 };
+
+
 
 export default AdditionalFeatures;
